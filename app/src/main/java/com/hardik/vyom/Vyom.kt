@@ -69,7 +69,6 @@ class Vyom private constructor() {
         @Volatile
         private var INSTANCE: Vyom? = null
 
-        @Synchronized
         fun get(): Vyom {
             INSTANCE ?: synchronized(this) {
                 INSTANCE ?: Vyom().also { //double lock checking
