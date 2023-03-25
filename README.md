@@ -20,3 +20,7 @@ Features to be added
 
 - Place holder support
 
+- Bitmap pool to reuse bitmaps avoiding the plentyful GCs
+
+- Observing Lifecycle through passed context. Possible with Activity and Fragment context
+
